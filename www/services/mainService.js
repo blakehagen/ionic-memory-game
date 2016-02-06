@@ -4,7 +4,7 @@ angular.module('memoryGame').service('mainService', function($http, $q){
         var deferred = $q.defer();
         $http({
             method: 'GET',
-            url: 'http://ponyfac.es/api.json/id:23,33,44'
+            url: 'http://ponyfac.es/api.json/id:1,2,3,4,5,6,7,8,9,10,22,21,13,14,15'
         }).then(function(response){
             deferred.resolve(response.data)
         })
