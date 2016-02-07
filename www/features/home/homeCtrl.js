@@ -4,17 +4,14 @@ angular.module('memoryGame').controller('homeCtrl', function ($scope, mainServic
     
     $scope.getPonies = function () {
         var picIds = [];
-        for (var i = 1; i < 11; i++) {
+        for (var i = 1; i < 10; i++) {
             var random = Math.floor((Math.random() * 161) + 1);
             picIds.push(random);
             picIds.push(random);
         }
-        console.log(picIds);
 
         shuffleArray(picIds);
         console.log(picIds.join(','));
-        
-
 
         mainService.getPonies(picIds).then(function (response) {
             console.log(response);
