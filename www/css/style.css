@@ -18,7 +18,7 @@
     .img-container img {
         margin-top: -5px;
         width: 90px;
-        max-height: 90px;
+        height: 90px;
         border-radius: 3px;
         border: 1px solid black;
         overflow: hidden;
