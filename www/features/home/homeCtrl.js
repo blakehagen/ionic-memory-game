@@ -1,7 +1,5 @@
 angular.module('memoryGame').controller('homeCtrl', function ($scope, mainService) {
-    
-    // $scope.test = 'hello world --> home view'
-    
+
     $scope.getPonies = function () {
         var picIds = [];
         for (var i = 1; i < 10; i++) {
@@ -13,8 +11,9 @@ angular.module('memoryGame').controller('homeCtrl', function ($scope, mainServic
                 i--;
             }
         }
+        picIds = picIds.concat(picIds.slice(0));
+        console.log(picIds);
         picIds = shuffleArray(picIds);
-        picIds = picIds.concat(picIds.slice(0)).join(',');
         console.log(picIds);
 
         mainService.getPonies(picIds).then(function (response) {
@@ -26,8 +25,7 @@ angular.module('memoryGame').controller('homeCtrl', function ($scope, mainServic
     $scope.getPonies();
 
 
-    // Randomize array element order in-place.
-    // Using Durstenfeld shuffle algorithm.
+    // Randomize array element order using Durstenfeld shuffle algorithm.
     function shuffleArray(array) {
         for (var i = array.length - 1; i > 0; i--) {
             var j = Math.floor(Math.random() * (i + 1));
