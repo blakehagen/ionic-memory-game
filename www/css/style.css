@@ -5,31 +5,28 @@
 
 .game-wrapper {
     margin: 110px auto;
-    width: 95%;
+    max-width: 90%;
+    /*height: auto;*/
     height: calc(100% - 110px);
-    /*border: 1px solid green;*/
+    border: 1px solid green;
+    display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
     justify-content: center;
-    align-items: flex-start;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-align-content: center;
+    align-content: center;
     overflow: auto;
 }
 
-.img-container {
-    justify-content: center;
-    align-items: center;
-    /*border: 1px solid blue;*/
-    display: flex;
-    width: 210px;
-    height: 210px;
-}
-
     .image {
-        height: 200px;
-        width: 200px;
-        /*height: 90px;*/
+        height: 100px;
+        width: 100px;
         border-radius: 5px;
         border: 1px solid black;
-        /*justify-content: center;
-        align-items: center;*/
+        margin: 2px;
+
     }
