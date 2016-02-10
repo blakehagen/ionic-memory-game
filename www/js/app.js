@@ -9,6 +9,12 @@ angular.module('memoryGame', ['ionic'])
                 controller: 'homeCtrl'
             })
 
+            .state('game', {
+                url: '/pony-game',
+                templateUrl: 'features/game/ponyGameTmpl.html',
+                controller: 'gameCtrl'
+            })
+
 
         $urlRouterProvider
             .otherwise('/');

@@ -1,25 +1,33 @@
-/* Empty. Add your own CSS if you like */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 
-.home-wrapper {
-    margin: 0 auto;
+.game-wrapper {
+    margin: 110px auto;
     width: 95%;
-    /*border: 1px solid green;*/
-    text-align: center;
+    height: auto;
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .img-container {
-    /*border: 1px solid blue;*/
-    width: 24%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 3px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    display: flex;
+    width: 100px;
+    height: 100px;
 }
 
     .img-container img {
-        margin-top: -5px;
-        width: 90px;
-        height: 90px;
+        width: 80%;
+        /*height: 90px;*/
         border-radius: 5px;
         border: 1px solid black;
-        overflow: hidden;
+        /*justify-content: center;
+        align-items: center;*/
     }
