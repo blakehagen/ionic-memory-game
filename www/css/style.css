@@ -6,25 +6,27 @@
 .game-wrapper {
     margin: 110px auto;
     width: 95%;
-    height: auto;
-    border: 1px solid green;
+    height: calc(100% - 110px);
+    /*border: 1px solid green;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    overflow: auto;
 }
 
 .img-container {
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 210px;
+    height: 210px;
 }
 
-    .img-container img {
-        width: 80%;
+    .image {
+        height: 200px;
+        width: 200px;
         /*height: 90px;*/
         border-radius: 5px;
         border: 1px solid black;
