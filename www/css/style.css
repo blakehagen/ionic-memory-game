@@ -6,9 +6,7 @@
 .game-wrapper {
     margin: 110px auto;
     max-width: 90%;
-    /*height: auto;*/
     height: calc(100% - 110px);
-    border: 1px solid green;
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
@@ -22,11 +20,32 @@
     overflow: auto;
 }
 
-    .image {
-        height: 100px;
-        width: 100px;
-        border-radius: 5px;
-        border: 1px solid black;
-        margin: 2px;
+.card-selected {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid lightpink;
+    margin: 2px;
+    cursor: pointer;
+    z-index: 9;
+}
+ 
+.card-not-selected {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    border: 50px solid lightpink;
+    margin: 2px;
+    cursor: pointer;
+} 
+    
+    
+/* MEDIA QUERIES */
 
+@media (max-width: 380px){
+    .image {
+        height: 50px;
+        width: 50px;
+        margin: 3px;
     }
+}
