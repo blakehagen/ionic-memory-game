@@ -24,30 +24,15 @@ angular.module('memoryGame').controller('gameCtrl', function ($scope, mainServic
     $scope.getPonies();
 
 
-    $scope.selected = false;
-    var count = 0;
-    var numSelected = [];
-
+    $scope.selectedCardId = null;
     $scope.selectCard = function (e) {
-        count += 1;
-        numSelected.push(e.pony.id);
-        console.log(count);
-        console.log(numSelected);
-        e.selected = !e.selected;
-        e.flip();
+        e.active = !e.active;
         
-
+        // console.log(pony.id);
+        // console.log($scope.selectedCardId);
+        // $scope.selectedCardId = pony.id;
+        // console.log($scope.selectedCardId);
     };
-
-
-    
-    
-    
-    
-    
-    
-    
-
 
     // Randomize array element order using Durstenfeld shuffle algorithm.
     function shuffleArray(array) {

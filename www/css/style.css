@@ -25,9 +25,8 @@
     width: 100px;
     border-radius: 5px;
     border: 1px solid lightpink;
-    margin: 2px;
+    margin: 3px;
     cursor: pointer;
-    z-index: 9;
 }
  
 .card-not-selected {
@@ -35,11 +34,12 @@
     width: 100px;
     border-radius: 5px;
     border: 50px solid lightpink;
-    margin: 2px;
+    margin: 3px;
     cursor: pointer;
+
 } 
-    
-    
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 380px){

@@ -1,6 +1,9 @@
 <div class="game-wrapper">
-    <div ng-repeat="pony in ponies track by $index" class="card-selected" ng-style="{'background-image': 'url(' + pony.image + ')'}"
-    style="background-size: cover" ng-class="selected ? 'card-selected' : 'card-not-selected'" ng-click="selectCard(this)">
+    <div ng-repeat="pony in ponies track by $index" class="card-not-selected" ng-style="{'background-image': 'url(' + pony.image + ')'}"
+    style="background-size: cover"  ng-click="selectCard(this)" ng-class="active ? 'card-selected' : 'card-not-selected'">
     </div>
 
 </div>
+
+
+<!--ng-class="{ 'card-selected' : selectedCardId === pony.id}"-->
