@@ -15,20 +15,25 @@ body {
 }
 
 .game-wrapper {
-  margin: 110px auto;
-  max-width: 90%;
-  height: calc(100% - 110px);
-  display: -webkit-flex;
+  border: 1px solid red;
+  height: 100vh;
+  min-height: 100vh;
   display: flex;
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-  -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-align-content: center;
-  align-content: center;
-  overflow: auto;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  max-width: 1000px;
+  border: 4px solid darkblue;
 }
 
 .card-selected {

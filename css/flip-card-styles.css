@@ -1,21 +1,11 @@
+card {
+  margin: 10px;
+}
+
 .flip {
   -webkit-perspective: 800;
   width: 150px;
   height: 150px;
-  /*position: relative;*/
-  /*margin: 50px auto;*/
-}
-
-.test {
-  display: flex;
-  justify-content: center;
-border: 3px solid blue;
-  margin: 20px;
-  flex-flow: wrap;
-}
-
-card {
-  margin: 0 10px;
 }
 
 .flip .card.flipped {
@@ -36,7 +26,7 @@ card {
   -webkit-backface-visibility: hidden;
   z-index: 2;
   text-align: center;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   border-radius: 6px;
 
 }
@@ -44,7 +34,8 @@ card {
 .flip .card .front {
   position: absolute;
   z-index: 1;
-  background: black;
+  background: url("http://hdwallpaper2013.com/wp-content/uploads/2013/01/Cool-Wallpapers-Love-Heart-HD-Wallpaper-1080x607.jpg") no-repeat center center;
+  background-size: cover;
   color: white;
   cursor: pointer;
 }
